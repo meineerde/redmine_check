@@ -1,6 +1,6 @@
 class CheckController < ApplicationController
   def index
-    ActiveRecord::Base.connection.execute("SELECT true;")
+    ActiveRecord::Base.connection.execute("SELECT 1;")
     render :text => "ALIVE", :status => 200
   rescue Exception
     render :text => "ERROR",  :status => 500
