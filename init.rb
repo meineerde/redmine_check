@@ -1,0 +1,10 @@
+require 'redmine'
+
+Redmine::Plugin.register :redmine_check do
+  name 'Redmine Check plugin'
+  url 'http://dev.holgerjust.de/projects/redmine-misc'
+  author 'Holger Just'
+  author_url 'http://meine-er.de'
+  description 'Add a simple and very cheap action to check whether the application stack is still alive.'
+  version '0.1'
+end
